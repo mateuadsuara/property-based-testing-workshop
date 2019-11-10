@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.10.0"]]
   :main ^:skip-aot property-based-testing-workshop.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :java-source-paths ["src"])
