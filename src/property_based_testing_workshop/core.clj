@@ -1,7 +1,8 @@
 (ns property-based-testing-workshop.core
   (:gen-class))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println (Core/sayHi)))
+(defn -main [& args]
+  (let [amount (Integer/parseInt (first args))
+        change (Core/getChange amount)]
+    (println (str "The change for " amount " is:"))
+    (println (clojure.string/join ", " change))))

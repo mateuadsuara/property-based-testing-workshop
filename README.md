@@ -21,13 +21,13 @@ Docker Desktop: https://docs.docker.com/v17.09/engine/installation/
 
 ### Option A: on your machine
 
-`lein run`
+`lein run 123`
 
 ### Option B: on Docker
 
 `docker/build`
 
-`docker/run`
+`docker/run 123`
 
 ## Run the tests
 
@@ -55,6 +55,6 @@ Docker Desktop: https://docs.docker.com/v17.09/engine/installation/
 
 ### Inside the bash shell, the following commands are available:
 
-`run`
+`run 123`
 `run-tests`
 `repl`

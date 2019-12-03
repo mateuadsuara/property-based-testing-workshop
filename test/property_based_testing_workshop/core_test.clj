@@ -6,12 +6,5 @@
             [clojure.test.check.generators :as gen]
             [property-based-testing-workshop.core :refer :all]))
 
-(defn returns-one [amount]
-  (= [amount] (Core/getChange amount)))
-
-(defspec always-returns-one 100
-  (for-all [amount gen/small-integer]
-           (returns-one amount)))
-
-(deftest a-unit-test
-  (is (returns-one 1)))
+(deftest one
+  (is (= (Core/getChange 1) [1])))
