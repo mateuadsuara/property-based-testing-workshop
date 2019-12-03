@@ -2,6 +2,10 @@
 
 This is a workshop for introducing property based testing with Clojure
 
+## Introduction to test.check
+
+https://clojure.github.io/test.check/intro.html
+
 ## Installation
 
 ### Option A: on your machine
